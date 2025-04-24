@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ugency - UGC Agency</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <base href="/ugency/">
+</head>
+<body>
+    <div class="grid-border"></div>
+    
+    <nav class="navbar">
+        <div class="logo">Ugency</div>
+        <div class="nav-links">
+            <a href="#home">HOME</a>
+            <a href="#services">SERVICE</a>
+            <a href="#brand">JOIN AS BRAND</a>
+            <a href="https://forms.gle/kbvW43g576wMTm8H8">JOIN AS CREATOR</a>
+            <a href="#story">OUR STORY</a>
+        </div>
+    </nav>
+
+    <section class="section-container hero" id="home">
+        <div class="hero-content">
+            <h1>user generated content ugc</h1>
+            <p>User-generated content (UGC) reigns supreme, surpassing average ads with a 4x higher click-through rate (CTR) and 50% lower cost-per-click (CPC). Why? Because authenticity is the only currency that truly matters on social media platforms like Instagram, Facebook, and TikTok.</p>
+            <a href="#creator" class="cta-button">Become a Creator</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/creator-desk.png" alt="Creator with Camera" style="max-width: 100%; max-height: 400px;">
+        </div>
+    </section>
+
+    <section class="section-container features" id="service">
+        <div class="feature-card">
+            <div class="feature-content">
+                <h2>what is user generated content(ugc)?</h2>
+                <p>User-generated content (UGC) is original content created by users and published on social media or other channels, such as images, videos, reviews, testimonials, or podcasts.</p>
+                <a href="#creator" class="cta-button">Learn More</a>
+            </div>
+            <div class="feature-image">
+                <img src="images/creator-recording.png" alt="Professional Creator Setup" style="max-width: 100%; max-height: 300px;">
+            </div>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-content">
+                <h2>UGC is more affordable than influencer marketing</h2>
+                <p>As a premier UGC agency, we offer more than traditional campaign strategies. Forget high-cost influencers and tap into a broad network of UGC creators for cost-effective, goal-exceeding solutions.</p>
+                <a href="#brand" class="cta-button">Partner With Us</a>
+            </div>
+            <div class="feature-image">
+                <img src="images/creator-meeting.png" alt="Collaborative Environment" style="max-width: 100%; max-height: 300px;">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-container services" id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>UGC Marketing</h3>
+                <p>Transform your brand with authentic user-generated content that drives real engagement and trust.</p>
+                <a href="#contact" class="cta-button">Enquire Now</a>
+            </div>
+            
+            <div class="service-card">
+                <h3>Web Design</h3>
+                <p>Create a stunning online presence with our custom, responsive web design solutions.</p>
+                <a href="#contact" class="cta-button">Enquire Now</a>
+            </div>
+
+            <div class="service-card">
+                <h3>Influencer Marketing</h3>
+                <p>Amplify your brand message through strategic partnerships with the right influencers.</p>
+                <a href="#contact" class="cta-button">Enquire Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>HOME</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>CREATORS</h3>
+                <ul>
+                    <li><a href="#join">Join as Creator</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#guidelines">Guidelines</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>SERVICES</h3>
+                <ul>
+                    <li><a href="#web-design">Web Design</a></li>
+                    <li><a href="#ugc">UGC Marketing</a></li>
+                    <li><a href="#influencer">Influencer Marketing</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>CONTACT</h3>
+                <ul>
+                    <li><a href="mailto:ugency.in@gmail.com">ugency.in@gmail.com</a></li>
+                    <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                    <li><a href="#social">Social Media</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
